@@ -14,7 +14,7 @@ import com.info.model.Login;
 @Controller
 public class LoginController {
      
-	@RequestMapping(value="/login" , method=RequestMethod.GET)
+	@RequestMapping(value={"/", "index"} , method=RequestMethod.GET)
 	public String show(Model model)
 	{
 		model.addAttribute("userForm", new Login());
